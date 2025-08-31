@@ -37,18 +37,19 @@ origin-space-astro-simulator/
    git clone https://github.com/origin-space/origin-space-astro-simulator.git
    cd origin-space-astro-simulator
    
-Configurar Unity:
-> Versión recomendada: Unity 2022.3 LTS
+2. Configurar Unity:
+   
+   Versión recomendada: Unity 2022.3 LTS
+   ```bash
+   Abrir carpeta /unity_project/ desde Unity Hub.
 
-> Abrir carpeta /unity_project/ desde Unity Hub.
+3. Configurar Python:
 
-> Configurar Python
+   Version recomenda: Python 3.10+
 
-> Version recomenda: Python 3.10+
-
-> Instalar dependencias:
-
-> pip install -r requirements.txt
+4. Instalar dependencias:
+   ```bash
+   pip install -r requirements.txt
 
 ***
 Flujo de trabajo en GitHub
