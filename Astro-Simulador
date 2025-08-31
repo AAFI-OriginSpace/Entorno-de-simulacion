@@ -1,0 +1,49 @@
+# Clonar vacío (o con README mínimo si marcaste la casilla en GitHub)
+git clone https://github.com/<tu-org-o-usuario>/origin-space-astro-simulator.git
+cd origin-space-astro-simulator
+
+mkdir -p unity_project python_bridge docs assets .github/workflows
+
+# README y .gitignore
+printf "# Origin Space – Simulador Astrobiológico (Unity + Python)\n" > README.md
+
+# .gitignore para Unity + Python
+cat > .gitignore << 'EOF'
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+env/
+venv/
+
+# Sistema
+.DS_Store
+Thumbs.db
+EOF
